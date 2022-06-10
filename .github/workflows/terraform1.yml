@@ -45,12 +45,12 @@
 name: 'Terraform'
 
 on:
-  workflow_dispatch
-#    inputs:
-#      action:
-#        description: 'terraform action plan||destroy'     
-#        required: true
-#        default: 'fmt'
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'terraform action plan||destroy'     
+        required: true
+        default: 'fmt'
 
 permissions:
   contents: read
