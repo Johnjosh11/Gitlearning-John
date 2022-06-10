@@ -69,4 +69,4 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Test run
-      run: echo ${{ secrets.TF_API_TOKEN }}-works
+      run: echo ${{ github.event.inputs.action }}-works
